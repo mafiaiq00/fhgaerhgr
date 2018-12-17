@@ -6,7 +6,8 @@ const developers = ["523224768074219552
 ","id"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!developers.includes(message.author.id)) return;
+   if(message.author.id !== '521341978659651596') return;
+
       
   if (message.content.startsWith(adminprefix + 'setg')) {
     client.user.setGame(argresult);
