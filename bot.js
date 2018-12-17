@@ -2,11 +2,12 @@ const Discord = require("discord.js");
 const client = new Discord.Client();v
 var adminprefix = 'M'
 
-const developers = ["523224768074219552
-","id"]
+
+
+
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
-   if(message.author.id !== '521341978659651596') return;
+   if(message.author.id !== '523224768074219552') return;
 
       
   if (message.content.startsWith(adminprefix + 'setg')) {
